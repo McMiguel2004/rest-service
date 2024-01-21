@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <title>Player Details</title>
+</head>
+<body>
+<div class="container mt-4">
+    <h1>Player Details</h1>
+    <p>ID: <span th:text="${player.id}"></span></p>
+    <p>Name: <span th:text="${player.firstName + ' ' + player.lastName}"></span></p>
+    <p>Height: <span th:text="${player.heightFeet + ' feet ' + player.heightInches + ' inches'}"></span></p>
+    <p>Position: <span th:text="${player.position}"></span></p>
+</div>
+</body>
+</html>
